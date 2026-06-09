@@ -163,7 +163,7 @@ export const phases = [
   },
   {
     id: 4,
-    title: "ہیروز کا دن",
+    title: "الٰہی فاتحین کا دن",
     subtitle: "10 محرم 61 ہجری — روزِ عاشور",
     period: "10 محرم 61 ہجری",
     color: "#C62828",
