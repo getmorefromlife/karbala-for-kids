@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-20 bg-gradient-to-b from-cream via-amber-50 to-cream relative overflow-hidden">
-        <div className="absolute top-20 start-10 text-7xl opacity-10 animate-float">🕌</div>
+        <div className="absolute top-16 start-4 text-6xl opacity-[0.07] animate-float">🕌</div>
         <div className="absolute top-40 end-10 text-6xl opacity-10 animate-float" style={{ animationDelay: "1s" }}>🌙</div>
         <div className="absolute bottom-40 start-20 text-5xl opacity-10 animate-float" style={{ animationDelay: "2s" }}>⭐</div>
         <div className="absolute bottom-20 end-20 text-6xl opacity-10 animate-float" style={{ animationDelay: "0.5s" }}>🏜️</div>
@@ -25,7 +25,7 @@ export default function HomePage() {
           className="text-center relative z-10 max-w-3xl mx-auto"
         >
           <div className="text-7xl mb-6 animate-float">🕌</div>
-          <h1 className="font-fredoka text-5xl sm:text-6xl md:text-7xl text-brown-dark mb-4 leading-tight">
+          <h1 className="font-fredoka text-5xl sm:text-6xl md:text-7xl text-brown-dark mb-4 leading-tight px-4">
             {ui.home.title1}
           </h1>
           <p className="font-nunito text-lg sm:text-xl text-brown/70 mb-8 max-w-lg mx-auto leading-relaxed">
