@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-nastaliq: "Noto Nastaliq Urdu", serif;
+
+  --color-cream: #FFF8E7;
+  --color-cream-dark: #F5E6C8;
+  --color-brown-dark: #3E2723;
+  --color-brown: #5D4037;
+  --color-gold: #F9A825;
+  --color-sky: #42A5F5;
+  --color-sunset: #FF7043;
+  --color-crimson: #C62828;
+  --color-night: #1A237E;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-nunito);
+    background-color: var(--color-cream);
+    color: var(--color-brown-dark);
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] .font-nunito {
+    font-family: var(--font-nastaliq), var(--font-nunito);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-fredoka);
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4 {
+    font-family: var(--font-nastaliq), var(--font-fredoka);
+    line-height: 1.8;
+  }
+
+  [dir="rtl"] .font-fredoka {
+    font-family: var(--font-nastaliq), var(--font-fredoka);
+  }
+}
+
+@layer components {
+  .phase-gradient-1 {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 50%, #FFE082 100%);
+  }
+  .phase-gradient-2 {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 50%, #90CAF9 100%);
+  }
+  .phase-gradient-3 {
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 50%, #FFCC80 100%);
+  }
+  .phase-gradient-4 {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 50%, #EF9A9A 100%);
+  }
+  .phase-gradient-5 {
+    background: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 50%, #9FA8DA 100%);
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .bounce-hover:hover {
+    animation: bounce 0.4s ease;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  .animate-twinkle {
+    animation: twinkle 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 4px currentColor); }
+    50% { filter: drop-shadow(0 0 12px currentColor); }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+  50% { transform: translateY(-3px); }
+  70% { transform: translateY(-5px); }
+}
