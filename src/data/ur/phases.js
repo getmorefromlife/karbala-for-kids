@@ -2,7 +2,7 @@ export const phases = [
   {
     id: 1,
     title: "مدینہ سے مکہ",
-    subtitle: "حق اور انصاف کی خاطر",
+    subtitle: "حق، انصاف اور اِصلاح اُمّتِ جَدّ کی خاطر",
     period: "رجب 60 ہجری",
     color: "#F9A825",
     bgClass: "bg-amber-50",
